@@ -12,31 +12,21 @@
 <body>
 
   <h1>Welcome</h1>
-  <input type="text" id="email" placeholder="Your Email" onkeyup="validate(this.value)" autofocus>
-  <input type="button" id="button" value="submit" class="btn disabled" onclick="correct()" disabled>
+  
+  <main class="main-container">
+    
+    <form action="#">
+
+      <input type="text" id="email" placeholder="Your Name" onkeyup="validate(this.value)" autofocus>
+      <input type="text" id="email" placeholder="Your Email" onkeyup="validate(this.value)" autofocus>
+      <input type="button" id="button" value="submit" class="btn disabled" onclick="correct()" disabled>
+    
+    </form>
+
+  </main>
+  
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script>
-    const button = document.getElementById('button')
-
-    function validate(email) {
-      if(email.match(/^[^@]+@[\w\.]{2,10}\.[\w]{2,5}$/i)) {
-        button.disabled = false
-        button.classList.remove('disabled')
-      } else {
-        button.disabled = true
-        button.classList.add('disabled')
-      }
-    }
-
-    function correct() {
-      swal({
-        title: 'Congratulations!',
-        text: 'This is a correct Email',
-        icon: 'success',
-        button: 'Thank\'s'
-      })
-    }
-  </script>
+  <script src="app.js"></script>
   
 </body>
 </html>

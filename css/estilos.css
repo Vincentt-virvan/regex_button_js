@@ -7,6 +7,28 @@ input {
         padding: 6px;
     }
 
+h1{
+        text-align: center;
+}
+
+
+.main-container{
+        
+        margin: 0 auto;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        background-color: grey;
+        border-radius: 10px;
+        padding: 3em;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background: rgb(255,142,142);
+        background: linear-gradient(36deg, #43c579 0%, rgba(248,241,83,1) 100%);  
+    }
+
 .btn {
         cursor: pointer;
         border: none;
